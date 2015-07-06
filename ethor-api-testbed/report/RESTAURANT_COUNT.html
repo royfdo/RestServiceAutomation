@@ -1,0 +1,383 @@
+<html>
+	<head>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css" title="Style">
+		<title>ethor RestAPI test report</title>
+		<h1>ethor RestAPI test report</h1>
+	</head>
+	<body>
+		<div class="home">
+			<a href='index.html'>Home</a>
+		</div>
+		<h2>RESTAURANT_COUNT module</h2>
+		<table class="details">
+			<tr>
+				<th width="35%"> Test scenario </th>
+				<!-- th width="12%"> URL </th -->
+				<th width="4%"> Format </th>
+				<th width="4%"> Status </th>
+				<th width="17%"> Request Param </th>
+				<th width="40%"> Description </th>
+			</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - Garlic Jim's</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+									chainId=[garlicjim], Garlic Jim's
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 31
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - Jet City Pizza</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/jetcity/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/jetcity/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/jetcity/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/jetcity/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+									chainId=[jetcity], Jet City Pizza
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 5
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - Cousin Vinny's Pizza</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/cousinvinnys/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/cousinvinnys/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/cousinvinnys/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/cousinvinnys/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+									chainId=[cousinvinnys], Cousin Vinny's Pizza
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 9
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - New York Pizza</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/newyorkpizza/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/newyorkpizza/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/newyorkpizza/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/newyorkpizza/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+									chainId=[newyorkpizza], New York Pizza
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 3
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - Papa Johns</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/unknown/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/unknown/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/unknown/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/unknown/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+									chainId=[unknown], Papa Johns
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 1
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - eThor Showcase</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/showcase/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/showcase/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/showcase/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/showcase/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+									chainId=[showcase], eThor Showcase
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 3
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - Zanzis Pizza</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/zanzis/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/zanzis/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/zanzis/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/zanzis/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+									chainId=[zanzis], Zanzis Pizza
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 2
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - Fultano's Pizza</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/fultanos/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/fultanos/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/fultanos/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/fultanos/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+									chainId=[fultanos], Fultano's Pizza
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 3
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - Panino’s Italian Café</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/paninos/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/paninos/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/paninos/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/paninos/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+									chainId=[paninos], Panino’s Italian Café
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 1
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - Peace Love and Pizza</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/peacelovepizza/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/peacelovepizza/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/peacelovepizza/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/peacelovepizza/restaurants/count.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+									chainId=[peacelovepizza], Peace Love and Pizza
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 2
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - Garlic Jim's</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+									chainId=[garlicjim], Garlic Jim's
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 31
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - Jet City Pizza</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/jetcity/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/jetcity/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/jetcity/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/jetcity/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+									chainId=[jetcity], Jet City Pizza
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 5
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - Cousin Vinny's Pizza</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/cousinvinnys/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/cousinvinnys/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/cousinvinnys/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/cousinvinnys/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+									chainId=[cousinvinnys], Cousin Vinny's Pizza
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 9
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - New York Pizza</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/newyorkpizza/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/newyorkpizza/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/newyorkpizza/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/newyorkpizza/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+									chainId=[newyorkpizza], New York Pizza
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 3
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - Papa Johns</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/unknown/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/unknown/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/unknown/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/unknown/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+									chainId=[unknown], Papa Johns
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 1
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - eThor Showcase</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/showcase/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/showcase/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/showcase/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/showcase/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+									chainId=[showcase], eThor Showcase
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 3
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - Zanzis Pizza</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/zanzis/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/zanzis/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/zanzis/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/zanzis/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+									chainId=[zanzis], Zanzis Pizza
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 2
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - Fultano's Pizza</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/fultanos/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/fultanos/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/fultanos/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/fultanos/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+									chainId=[fultanos], Fultano's Pizza
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 3
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - Panino’s Italian Café</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/paninos/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/paninos/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/paninos/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/paninos/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+									chainId=[paninos], Panino’s Italian Café
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 1
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve restaurant count for chain - Peace Love and Pizza</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/peacelovepizza/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/peacelovepizza/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/peacelovepizza/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/peacelovepizza/restaurants/count.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+									chainId=[peacelovepizza], Peace Love and Pizza
+					
+					</td>
+					
+					
+					<td>
+							Retrieved restaurant count : 2
+					</td>
+				</tr>
+		</table>
+	</body>
+</html>

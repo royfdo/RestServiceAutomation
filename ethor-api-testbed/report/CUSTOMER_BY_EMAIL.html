@@ -1,0 +1,149 @@
+<html>
+	<head>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css" title="Style">
+		<title>ethor RestAPI test report</title>
+		<h1>ethor RestAPI test report</h1>
+	</head>
+	<body>
+		<div class="home">
+			<a href='index.html'>Home</a>
+		</div>
+		<h2>CUSTOMER_BY_EMAIL module</h2>
+		<table class="details">
+			<tr>
+				<th width="35%"> Test scenario </th>
+				<!-- th width="12%"> URL </th -->
+				<th width="4%"> Format </th>
+				<th width="4%"> Status </th>
+				<th width="17%"> Request Param </th>
+				<th width="40%"> Description </th>
+			</tr>
+				<tr>
+					<td>
+						<p>Retrieve customer by email</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.json?email=clients@ethor.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.json?email=clients@ethor.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.json?email=clients@ethor.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.json?email=clients@ethor.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>chainId=garlicjim</li>
+								<li>email=clients@ethor.com</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve customer by email</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.json?email=angela31stanley@gmail.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.json?email=angela31stanley@gmail.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.json?email=angela31stanley@gmail.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.json?email=angela31stanley@gmail.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chainId=garlicjim</li>
+								<li>email=angela31stanley@gmail.com</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>id</td><td>5</td><td>OQ==</td></tr><tr><td>phoneNumber</td><td>[type=home, areaCode=206, number=3595184]</td><td>[type=null, areaCode=206, number=3595184]</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve customer by email</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.json?email=forcewave@gmail.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.json?email=forcewave@gmail.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.json?email=forcewave@gmail.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.json?email=forcewave@gmail.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chainId=garlicjim</li>
+								<li>email=forcewave@gmail.com</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>id</td><td>10705</td><td>OQ==</td></tr></table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve customer by email</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.xml?email=clients@ethor.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.xml?email=clients@ethor.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.xml?email=clients@ethor.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.xml?email=clients@ethor.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>chainId=garlicjim</li>
+								<li>email=clients@ethor.com</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve customer by email</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.xml?email=angela31stanley@gmail.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.xml?email=angela31stanley@gmail.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.xml?email=angela31stanley@gmail.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.xml?email=angela31stanley@gmail.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chainId=garlicjim</li>
+								<li>email=angela31stanley@gmail.com</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>id</td><td>5</td><td>OQ==</td></tr><tr><td>phoneNumber</td><td>[type=home, areaCode=206, number=3595184]</td><td>[type=null, areaCode=206, number=3595184]</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve customer by email</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.xml?email=forcewave@gmail.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.xml?email=forcewave@gmail.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.xml?email=forcewave@gmail.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.xml?email=forcewave@gmail.com&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chainId=garlicjim</li>
+								<li>email=forcewave@gmail.com</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>id</td><td>10705</td><td>OQ==</td></tr></table>
+					</td>
+				</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,163 @@
+<html>
+	<head>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css" title="Style">
+		<title>ethor RestAPI test report</title>
+		<h1>ethor RestAPI test report</h1>
+	</head>
+	<body>
+		<div class="home">
+			<a href='index.html'>Home</a>
+		</div>
+		<h2>CUSTOMER_BY_PHONE module</h2>
+		<table class="details">
+			<tr>
+				<th width="35%"> Test scenario </th>
+				<!-- th width="12%"> URL </th -->
+				<th width="4%"> Format </th>
+				<th width="4%"> Status </th>
+				<th width="17%"> Request Param </th>
+				<th width="40%"> Description </th>
+			</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve customer by phone</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.json?phone=4036057012&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.json?phone=4036057012&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.json?phone=4036057012&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.json?phone=4036057012&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chainId=garlicjim</li>
+								<li>phone=4036057012</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+						<ul>
+							<li>Successful</li>
+							<li><table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>birth date</td><td>1974-02-01</td><td>null</td></tr><tr><td>email</td><td>clients@ethor.com</td><td>rayyip+test4@gmail.com</td></tr><tr><td>firstName</td><td>Jim</td><td>Ethor</td></tr><tr><td>lastName</td><td>Ethor</td><td>Test4</td></tr><tr><td>gender</td><td>m</td><td>null</td></tr><tr><td>billingAddress.city</td><td>KIRKLAND</td><td>EDMONDS</td></tr><tr><td>billingAddress.postalZip</td><td>98034</td><td>98021</td></tr><tr><td>billingAddress.street</td><td>north east 120th street</td><td>Arbour Butte Way</td></tr><tr><td>billingAddress.streetNumber</td><td>12718</td><td>71</td></tr><tr><td>phoneNumber</td><td>[type=mobile, areaCode=403, number=6057012]</td><td>[type=home, areaCode=403, number=6057012]</td></tr></table></li>
+							<li><table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>birth date</td><td>1974-02-01</td><td>null</td></tr><tr><td>email</td><td>clients@ethor.com</td><td>rayyip+test55@gmail.com</td></tr><tr><td>firstName</td><td>Jim</td><td>Ray</td></tr><tr><td>lastName</td><td>Ethor</td><td>Yip</td></tr><tr><td>gender</td><td>m</td><td>null</td></tr><tr><td>billingAddress.city</td><td>KIRKLAND</td><td>Calgary</td></tr><tr><td>billingAddress.postalZip</td><td>98034</td><td>98070</td></tr><tr><td>billingAddress.provState</td><td>WA</td><td>AL</td></tr><tr><td>billingAddress.street</td><td>north east 120th street</td><td>Arbour Butte Way</td></tr><tr><td>billingAddress.streetNumber</td><td>12718</td><td>71</td></tr><tr><td>phoneNumber</td><td>[type=mobile, areaCode=403, number=6057012]</td><td>[type=home, areaCode=403, number=6057012]</td></tr></table></li>
+							<li><table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>birth date</td><td>1974-02-01</td><td>null</td></tr><tr><td>email</td><td>clients@ethor.com</td><td>rayyip+test56@gmail.com</td></tr><tr><td>firstName</td><td>Jim</td><td>eThor</td></tr><tr><td>lastName</td><td>Ethor</td><td>Tester</td></tr><tr><td>gender</td><td>m</td><td>null</td></tr><tr><td>billingAddress.city</td><td>KIRKLAND</td><td>SALEM</td></tr><tr><td>billingAddress.postalZip</td><td>98034</td><td>97306</td></tr><tr><td>billingAddress.provState</td><td>WA</td><td>OR</td></tr><tr><td>billingAddress.street</td><td>north east 120th street</td><td>Snowball Ave SE</td></tr><tr><td>billingAddress.streetNumber</td><td>12718</td><td>1668</td></tr><tr><td>phoneNumber</td><td>[type=mobile, areaCode=403, number=6057012]</td><td>[type=home, areaCode=403, number=6057012]</td></tr></table></li>
+							<li><table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>birth date</td><td>1974-02-01</td><td>null</td></tr><tr><td>email</td><td>clients@ethor.com</td><td>ryip+jun23@ethor.com</td></tr><tr><td>firstName</td><td>Jim</td><td>Ray</td></tr><tr><td>lastName</td><td>Ethor</td><td>yip</td></tr><tr><td>gender</td><td>m</td><td>null</td></tr><tr><td>billingAddress.city</td><td>KIRKLAND</td><td>BEAVERTON</td></tr><tr><td>billingAddress.postalZip</td><td>98034</td><td>97005</td></tr><tr><td>billingAddress.provState</td><td>WA</td><td>OR</td></tr><tr><td>billingAddress.street</td><td>north east 120th street</td><td>happy vally</td></tr><tr><td>billingAddress.streetNumber</td><td>12718</td><td>71</td></tr><tr><td>phoneNumber</td><td>[type=mobile, areaCode=403, number=6057012]</td><td>[type=home, areaCode=403, number=6057012]</td></tr></table></li>
+							<li><table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>birth date</td><td>1974-02-01</td><td>null</td></tr><tr><td>email</td><td>clients@ethor.com</td><td>ryip+test1207@ethor.com</td></tr><tr><td>firstName</td><td>Jim</td><td>Ray</td></tr><tr><td>lastName</td><td>Ethor</td><td>Test1207</td></tr><tr><td>gender</td><td>m</td><td>null</td></tr><tr><td>billingAddress.city</td><td>KIRKLAND</td><td>EVERETT</td></tr><tr><td>billingAddress.postalZip</td><td>98034</td><td>98024</td></tr><tr><td>billingAddress.street</td><td>north east 120th street</td><td>Happy Valley Road</td></tr><tr><td>billingAddress.streetNumber</td><td>12718</td><td>71</td></tr><tr><td>phoneNumber</td><td>[type=mobile, areaCode=403, number=6057012]</td><td>[type=home, areaCode=403, number=6057012]</td></tr></table></li>
+						</ul>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve customer by phone</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.json?phone=2063595184&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.json?phone=2063595184&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.json?phone=2063595184&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.json?phone=2063595184&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chainId=garlicjim</li>
+								<li>phone=2063595184</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>id</td><td>5</td><td>OQ==</td></tr><tr><td>phoneNumber</td><td>[type=home, areaCode=206, number=3595184]</td><td>[type=null, areaCode=206, number=3595184]</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve customer by phone</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.json?phone=5419081821&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.json?phone=5419081821&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.json?phone=5419081821&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.json?phone=5419081821&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chainId=garlicjim</li>
+								<li>phone=5419081821</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>id</td><td>10705</td><td>OQ==</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve customer by phone</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.xml?phone=4036057012&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.xml?phone=4036057012&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.xml?phone=4036057012&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.xml?phone=4036057012&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chainId=garlicjim</li>
+								<li>phone=4036057012</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+						<ul>
+							<li>Successful</li>
+							<li><table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>birth date</td><td>1974-02-01</td><td>null</td></tr><tr><td>email</td><td>clients@ethor.com</td><td>rayyip+test4@gmail.com</td></tr><tr><td>firstName</td><td>Jim</td><td>Ethor</td></tr><tr><td>lastName</td><td>Ethor</td><td>Test4</td></tr><tr><td>gender</td><td>m</td><td>null</td></tr><tr><td>billingAddress.city</td><td>KIRKLAND</td><td>EDMONDS</td></tr><tr><td>billingAddress.postalZip</td><td>98034</td><td>98021</td></tr><tr><td>billingAddress.street</td><td>north east 120th street</td><td>Arbour Butte Way</td></tr><tr><td>billingAddress.streetNumber</td><td>12718</td><td>71</td></tr><tr><td>phoneNumber</td><td>[type=mobile, areaCode=403, number=6057012]</td><td>[type=home, areaCode=403, number=6057012]</td></tr></table></li>
+							<li><table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>birth date</td><td>1974-02-01</td><td>null</td></tr><tr><td>email</td><td>clients@ethor.com</td><td>rayyip+test55@gmail.com</td></tr><tr><td>firstName</td><td>Jim</td><td>Ray</td></tr><tr><td>lastName</td><td>Ethor</td><td>Yip</td></tr><tr><td>gender</td><td>m</td><td>null</td></tr><tr><td>billingAddress.city</td><td>KIRKLAND</td><td>Calgary</td></tr><tr><td>billingAddress.postalZip</td><td>98034</td><td>98070</td></tr><tr><td>billingAddress.provState</td><td>WA</td><td>AL</td></tr><tr><td>billingAddress.street</td><td>north east 120th street</td><td>Arbour Butte Way</td></tr><tr><td>billingAddress.streetNumber</td><td>12718</td><td>71</td></tr><tr><td>phoneNumber</td><td>[type=mobile, areaCode=403, number=6057012]</td><td>[type=home, areaCode=403, number=6057012]</td></tr></table></li>
+							<li><table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>birth date</td><td>1974-02-01</td><td>null</td></tr><tr><td>email</td><td>clients@ethor.com</td><td>rayyip+test56@gmail.com</td></tr><tr><td>firstName</td><td>Jim</td><td>eThor</td></tr><tr><td>lastName</td><td>Ethor</td><td>Tester</td></tr><tr><td>gender</td><td>m</td><td>null</td></tr><tr><td>billingAddress.city</td><td>KIRKLAND</td><td>SALEM</td></tr><tr><td>billingAddress.postalZip</td><td>98034</td><td>97306</td></tr><tr><td>billingAddress.provState</td><td>WA</td><td>OR</td></tr><tr><td>billingAddress.street</td><td>north east 120th street</td><td>Snowball Ave SE</td></tr><tr><td>billingAddress.streetNumber</td><td>12718</td><td>1668</td></tr><tr><td>phoneNumber</td><td>[type=mobile, areaCode=403, number=6057012]</td><td>[type=home, areaCode=403, number=6057012]</td></tr></table></li>
+							<li><table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>birth date</td><td>1974-02-01</td><td>null</td></tr><tr><td>email</td><td>clients@ethor.com</td><td>ryip+jun23@ethor.com</td></tr><tr><td>firstName</td><td>Jim</td><td>Ray</td></tr><tr><td>lastName</td><td>Ethor</td><td>yip</td></tr><tr><td>gender</td><td>m</td><td>null</td></tr><tr><td>billingAddress.city</td><td>KIRKLAND</td><td>BEAVERTON</td></tr><tr><td>billingAddress.postalZip</td><td>98034</td><td>97005</td></tr><tr><td>billingAddress.provState</td><td>WA</td><td>OR</td></tr><tr><td>billingAddress.street</td><td>north east 120th street</td><td>happy vally</td></tr><tr><td>billingAddress.streetNumber</td><td>12718</td><td>71</td></tr><tr><td>phoneNumber</td><td>[type=mobile, areaCode=403, number=6057012]</td><td>[type=home, areaCode=403, number=6057012]</td></tr></table></li>
+							<li><table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>birth date</td><td>1974-02-01</td><td>null</td></tr><tr><td>email</td><td>clients@ethor.com</td><td>ryip+test1207@ethor.com</td></tr><tr><td>firstName</td><td>Jim</td><td>Ray</td></tr><tr><td>lastName</td><td>Ethor</td><td>Test1207</td></tr><tr><td>gender</td><td>m</td><td>null</td></tr><tr><td>billingAddress.city</td><td>KIRKLAND</td><td>EVERETT</td></tr><tr><td>billingAddress.postalZip</td><td>98034</td><td>98024</td></tr><tr><td>billingAddress.street</td><td>north east 120th street</td><td>Happy Valley Road</td></tr><tr><td>billingAddress.streetNumber</td><td>12718</td><td>71</td></tr><tr><td>phoneNumber</td><td>[type=mobile, areaCode=403, number=6057012]</td><td>[type=home, areaCode=403, number=6057012]</td></tr></table></li>
+						</ul>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve customer by phone</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.xml?phone=2063595184&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.xml?phone=2063595184&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.xml?phone=2063595184&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.xml?phone=2063595184&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chainId=garlicjim</li>
+								<li>phone=2063595184</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>id</td><td>5</td><td>OQ==</td></tr><tr><td>phoneNumber</td><td>[type=home, areaCode=206, number=3595184]</td><td>[type=null, areaCode=206, number=3595184]</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve customer by phone</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.xml?phone=5419081821&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.xml?phone=5419081821&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/customers.xml?phone=5419081821&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/customers.xml?phone=5419081821&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chainId=garlicjim</li>
+								<li>phone=5419081821</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>id</td><td>10705</td><td>OQ==</td></tr></table>
+					</td>
+				</tr>
+		</table>
+	</body>
+</html>

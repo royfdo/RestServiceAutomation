@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>ethor-testbed</artifactId>
+		<groupId>com.ethor</groupId>
+		<version>1.0.0</version>
+		<relativePath>..</relativePath>
+	</parent>
+	<artifactId>ethor-api-testbed</artifactId>
+	<name>eThor REST API test bed</name>
+	<description>Project to test eThor REST API</description>
+	<build>
+		<plugins>
+			<!-- <plugin>
+				Extended Maven antrun plugin
+				https://maven-antrun-extended-plugin.dev.java.net/
+				<groupId>org.jvnet.maven-antrun-extended-plugin</groupId>
+				<artifactId>maven-antrun-extended-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>test-reports</id>
+						<phase>test</phase>
+						<configuration>
+							<tasks>
+								<junitreport todir="target/surefire-reports">
+									<fileset dir="target/surefire-reports">
+										<include name="**/*.xml" />
+									</fileset>
+									<report styledir="." format="frames" todir="target/surefire-reports" />
+								</junitreport>
+							</tasks>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.ant</groupId>
+						<artifactId>ant-junit</artifactId>
+						<version>1.8.0</version>
+						<exclusions>
+					<exclusion>
+						<groupId>junit</groupId>
+						<artifactId>junit</artifactId>
+					</exclusion>
+				</exclusions>
+					</dependency>
+					<dependency>
+						<groupId>org.apache.ant</groupId>
+						<artifactId>ant-trax</artifactId>
+						<version>1.8.0</version>
+					</dependency>
+				</dependencies>
+			</plugin> -->
+		</plugins>
+		
+	</build>
+</project>

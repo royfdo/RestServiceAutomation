@@ -1,0 +1,483 @@
+<html>
+	<head>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css" title="Style">
+		<title>ethor RestAPI test report</title>
+		<h1>ethor RestAPI test report</h1>
+	</head>
+	<body>
+		<div class="home">
+			<a href='index.html'>Home</a>
+		</div>
+		<h2>MENUITEM_BYID module</h2>
+		<table class="details">
+			<tr>
+				<th width="35%"> Test scenario </th>
+				<!-- th width="12%"> URL </th -->
+				<th width="4%"> Format </th>
+				<th width="4%"> Status </th>
+				<th width="17%"> Request Param </th>
+				<th width="40%"> Description </th>
+			</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyMzg=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyMzg=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyMzg=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyMzg=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>menuItemId=Pizza</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>image</td><td>buildyourownImage</td><td>buildyourown</td></tr><tr><td># of sizes</td><td>MDHND | MDTHN | LGHND | LGTHN | XLGHND | mini | XLTHN | MDGFR | XL Slice | LG-GFR | XLSliceP | TEST</td><td>MDHND | MDTHN | LGHND | LGTHN | XLGHND | mini | XLTHN | MDGFR | XL Slice | LG-GFR | XLSliceP</td></tr><tr><td>contentGroups.minContents</td><td>10</td><td>0</td></tr></table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NDY2OTAy.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NDY2OTAy.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NDY2OTAy.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NDY2OTAy.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>menuItemId=LUAU PIZZA</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyNTY=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyNTY=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyNTY=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyNTY=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>menuItemId=The Sicilian</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyOTI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyOTI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyOTI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyOTI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>menuItemId=ULTIMATE</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkwMjI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkwMjI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkwMjI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkwMjI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>menuItemId=The Hercules</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg4NDI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg4NDI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg4NDI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg4NDI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>menuItemId=Chicken Bacon Ranch</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg5MzI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg5MzI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg5MzI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg5MzI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>menuItemId=Jim's Garlic Chicken Pizza</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg4NjA=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg4NjA=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg4NjA=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg4NjA=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>menuItemId=Smokin' Sweet BBQ</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkxNjY=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkxNjY=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkxNjY=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkxNjY=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>menuItemId=Jims Gourmet Garlic</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyMjA=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyMjA=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyMjA=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyMjA=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>menuItemId=Jims Veggie</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyMzg=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyMzg=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyMzg=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyMzg=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>menuItemId=Pizza</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>image</td><td>buildyourownImage</td><td>buildyourown</td></tr><tr><td># of sizes</td><td>MDHND | MDTHN | LGHND | LGTHN | XLGHND | mini | XLTHN | MDGFR | XL Slice | LG-GFR | XLSliceP | TEST</td><td>MDHND | MDTHN | LGHND | LGTHN | XLGHND | mini | XLTHN | MDGFR | XL Slice | LG-GFR | XLSliceP</td></tr><tr><td>contentGroups.minContents</td><td>10</td><td>0</td></tr></table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NDY2OTAy.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NDY2OTAy.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NDY2OTAy.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NDY2OTAy.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>menuItemId=LUAU PIZZA</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyNTY=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyNTY=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyNTY=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyNTY=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>menuItemId=The Sicilian</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyOTI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyOTI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyOTI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyOTI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>menuItemId=ULTIMATE</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkwMjI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkwMjI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkwMjI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkwMjI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>menuItemId=The Hercules</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg4NDI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg4NDI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg4NDI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg4NDI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>menuItemId=Chicken Bacon Ranch</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg5MzI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg5MzI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg5MzI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg5MzI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>menuItemId=Jim's Garlic Chicken Pizza</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg4NjA=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg4NjA=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg4NjA=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTg4NjA=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>menuItemId=Smokin' Sweet BBQ</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkxNjY=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkxNjY=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkxNjY=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkxNjY=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>menuItemId=Jims Gourmet Garlic</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Retrieve menuItems for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyMjA=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyMjA=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyMjA=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/categories/MjM0MA==/menuitems/NTkyMjA=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>menuItemId=Jims Veggie</li>
+								<li>chainId=Garlic Jim's</li>
+								<li>categoryId=Pizza</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,485 @@
+<html>
+	<head>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css" title="Style">
+		<title>ethor RestAPI test report</title>
+		<h1>ethor RestAPI test report</h1>
+	</head>
+	<body>
+		<div class="home">
+			<a href='index.html'>Home</a>
+		</div>
+		<h2>RESTAURANT_BYID module</h2>
+		<table class="details">
+			<tr>
+				<th width="35%"> Test scenario </th>
+				<!-- th width="12%"> URL </th -->
+				<th width="4%"> Format </th>
+				<th width="4%"> Status </th>
+				<th width="17%"> Request Param </th>
+				<th width="40%"> Description </th>
+			</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>deliveryFee</td><td>1</td><td>1.75</td></tr><tr><td>latitude</td><td>34</td><td>34.198243</td></tr><tr><td>longitude</td><td>-118</td><td>-118.326833</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/NDg=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/NDg=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/NDg=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/NDg=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=1876 S. Pacific Coast Highway</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>latitude</td><td>33</td><td>33.816288</td></tr><tr><td>longitude</td><td>-118</td><td>-118.377875</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/NzI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/NzI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/NzI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/NzI=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=131 Cochran St., Suite D</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>latitude</td><td>34</td><td>34.281518</td></tr><tr><td>longitude</td><td>-118</td><td>-118.79415</td></tr><tr><td>closeTime</td><td>2200 | 2200 | 2200 | 2300 | 2300 | 2300 | 2200</td><td>2200 | 2200 | 2200 | 2200 | 2200 | 2200 | 2200</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/OTY=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/OTY=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/OTY=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/OTY=.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=3982 Red Cedar Dr. Suite A</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>latitude</td><td>39</td><td>39.525379</td></tr><tr><td>longitude</td><td>-104</td><td>-104.942064</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTIw.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTIw.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTIw.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTIw.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=8410 SW Nimbus Ave, #400</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>country</td><td>USA</td><td>US</td></tr><tr><td>latitude</td><td>45</td><td>45.459207</td></tr><tr><td>longitude</td><td>-122</td><td>-122.789565</td></tr><tr><td>street</td><td>8410 SW Nimbus Ave, #400</td><td>8410 SW Nimbus Ave, #500</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTQ0.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTQ0.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTQ0.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTQ0.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=4555 Liberty Road S</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>latitude</td><td>44</td><td>44.891757</td></tr><tr><td>longitude</td><td>-123</td><td>-123.059339</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTY4.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTY4.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTY4.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTY4.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=1105 Bellevue Way NE</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>latitude</td><td>47</td><td>47.615581</td></tr><tr><td>longitude</td><td>-122</td><td>-122.207657</td></tr><tr><td>openTime</td><td>0830 | 0830 | 0830 | 0830 | 0830 | 1000 | 1000</td><td>1000 | 1000 | 1000 | 1000 | 1000 | 1000 | 1000</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Error">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/Mtky.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/Mtky.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/Mtky.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/Mtky.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>ERROR</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=8431 122nd Ave NE</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Invalid request, returned with http status 500
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjE2.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjE2.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjE2.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjE2.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=23330 Maple Valley Black Diamond Rd</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>latitude</td><td>47</td><td>47.40389</td></tr><tr><td>longitude</td><td>-122</td><td>-122.005934</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQw.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQw.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQw.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQw.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=12480 SW Walker Road</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>latitude</td><td>45</td><td>45.496416</td></tr><tr><td>longitude</td><td>-122</td><td>-122.800039</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MzYw.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MzYw.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MzYw.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MzYw.json?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=10924 Mukilteo Speedway</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>latitude</td><td>47</td><td>47.91319</td></tr><tr><td>longitude</td><td>-122</td><td>-122.303881</td></tr><tr><td>closeTime</td><td>2200 | 2200 | 2200 | 2200 | 2300 | 2300 | 2200</td><td>2250 | 2250 | 2250 | 2250 | 2250 | 2250 | 2250</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=2128 N. Glenoaks Blvd #103</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>deliveryFee</td><td>1</td><td>1.75</td></tr><tr><td>latitude</td><td>34</td><td>34.198243</td></tr><tr><td>longitude</td><td>-118</td><td>-118.326833</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/NDg=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/NDg=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/NDg=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/NDg=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=1876 S. Pacific Coast Highway</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>latitude</td><td>33</td><td>33.816288</td></tr><tr><td>longitude</td><td>-118</td><td>-118.377875</td></tr><tr><td># of acceptedPayment</td><td>Cash | Credit Card</td><td>Credit Card</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/NzI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/NzI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/NzI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/NzI=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=131 Cochran St., Suite D</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>latitude</td><td>34</td><td>34.281518</td></tr><tr><td>longitude</td><td>-118</td><td>-118.79415</td></tr><tr><td># of acceptedPayment</td><td>Cash | Credit Card</td><td>Credit Card</td></tr><tr><td>closeTime</td><td>2200 | 2200 | 2200 | 2300 | 2300 | 2300 | 2200</td><td>2200 | 2200 | 2200 | 2200 | 2200 | 2200 | 2200</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/OTY=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/OTY=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/OTY=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/OTY=.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=3982 Red Cedar Dr. Suite A</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>latitude</td><td>39</td><td>39.525379</td></tr><tr><td>longitude</td><td>-104</td><td>-104.942064</td></tr><tr><td># of acceptedPayment</td><td>Cash | Credit Card</td><td>Cash</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTIw.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTIw.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTIw.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTIw.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=8410 SW Nimbus Ave, #400</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>country</td><td>USA</td><td>US</td></tr><tr><td>latitude</td><td>45</td><td>45.459207</td></tr><tr><td>longitude</td><td>-122</td><td>-122.789565</td></tr><tr><td>street</td><td>8410 SW Nimbus Ave, #400</td><td>8410 SW Nimbus Ave, #500</td></tr><tr><td># of acceptedPayment</td><td>Cash | Credit Card</td><td>Credit Card</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTQ0.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTQ0.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTQ0.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTQ0.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=4555 Liberty Road S</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>latitude</td><td>44</td><td>44.891757</td></tr><tr><td>longitude</td><td>-123</td><td>-123.059339</td></tr><tr><td># of acceptedPayment</td><td>Cash | Credit Card</td><td>Cash</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTY4.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTY4.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTY4.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MTY4.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=1105 Bellevue Way NE</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>latitude</td><td>47</td><td>47.615581</td></tr><tr><td>longitude</td><td>-122</td><td>-122.207657</td></tr><tr><td># of acceptedPayment</td><td>Cash | Credit Card</td><td>Cash</td></tr><tr><td>openTime</td><td>0830 | 0830 | 0830 | 0830 | 0830 | 1000 | 1000</td><td>1000 | 1000 | 1000 | 1000 | 1000 | 1000 | 1000</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Error">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/Mtky.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/Mtky.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/Mtky.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/Mtky.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>ERROR</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=8431 122nd Ave NE</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Invalid request, returned with http status 500
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjE2.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjE2.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjE2.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjE2.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=23330 Maple Valley Black Diamond Rd</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>latitude</td><td>47</td><td>47.40389</td></tr><tr><td>longitude</td><td>-122</td><td>-122.005934</td></tr><tr><td># of acceptedPayment</td><td>Cash | Credit Card</td><td>Credit Card</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQw.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQw.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQw.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQw.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=12480 SW Walker Road</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>latitude</td><td>45</td><td>45.496416</td></tr><tr><td>longitude</td><td>-122</td><td>-122.800039</td></tr><tr><td># of acceptedPayment</td><td>Cash | Credit Card</td><td>Credit Card</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>Retrieve restaurant for given id</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MzYw.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MzYw.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MzYw.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MzYw.xml?accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>chaindId=garlicjim</li>
+								<li>restaurantId=10924 Mukilteo Speedway</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td>chaind id</td><td>garlicjim</td><td>MjE=</td></tr><tr><td>latitude</td><td>47</td><td>47.91319</td></tr><tr><td>longitude</td><td>-122</td><td>-122.303881</td></tr><tr><td># of acceptedPayment</td><td>Cash | Credit Card</td><td>Credit Card</td></tr><tr><td>closeTime</td><td>2200 | 2200 | 2200 | 2200 | 2300 | 2300 | 2200</td><td>2250 | 2250 | 2250 | 2250 | 2250 | 2250 | 2250</td></tr></table>
+					</td>
+				</tr>
+		</table>
+	</body>
+</html>

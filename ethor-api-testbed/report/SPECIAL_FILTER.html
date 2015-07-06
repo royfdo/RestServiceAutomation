@@ -1,0 +1,351 @@
+<html>
+	<head>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css" title="Style">
+		<title>ethor RestAPI test report</title>
+		<h1>ethor RestAPI test report</h1>
+	</head>
+	<body>
+		<div class="home">
+			<a href='index.html'>Home</a>
+		</div>
+		<h2>SPECIAL_FILTER module</h2>
+		<table class="details">
+			<tr>
+				<th width="35%"> Test scenario </th>
+				<!-- th width="12%"> URL </th -->
+				<th width="4%"> Format </th>
+				<th width="4%"> Status </th>
+				<th width="17%"> Request Param </th>
+				<th width="40%"> Description </th>
+			</tr>
+				<tr class="Failure">
+					<td>
+						<p>filter specials by [type]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>RestaurantId=MjQ=[2128 N. Glenoaks Blvd #103]</li>
+								<li>type=BUY_X_GET_Y_FREE</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td># of specials</td><td>Buy Large Specialty, Get M Cheese FREE | Buy a Medium Pizza, Get a Medium Pizza Free | Buy Any XL Pizza, Get FREE Ice Cream | Buy Any Large Pizza, Get FREE Ice Cream | Free Ice Cream with L or XL Pizza | FREE Garlic Breadsticks and Soda | Free Breadsticks and 2 Liter w/purchase | Buy Lg Specialty, Get M One Top FREE</td><td>Buy a Medium Pizza, Get a Medium Pizza Free | Buy Any XL Pizza, Get FREE Ice Cream | Buy Any Large Pizza, Get FREE Ice Cream | Free Ice Cream with L or XL Pizza | FREE Garlic Breadsticks and Soda | Free Breadsticks and 2 Liter w/purchase | Buy Lg Specialty, Get M One Top FREE</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Error">
+					<td>
+						<p>filter specials by [isVisible, type]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>ERROR</td>
+					<td>
+						<ul>						
+								<li>isVisible=true</li>
+								<li>RestaurantId=MjQ=[2128 N. Glenoaks Blvd #103]</li>
+								<li>type=BUY_X_GET_Y_FREE</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Invalid request, returned with http status 404
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>filter specials by [isVisible, type]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>isVisible=false</li>
+								<li>RestaurantId=MjQ=[2128 N. Glenoaks Blvd #103]</li>
+								<li>type=BUY_X_GET_Y_FREE</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr class="Error">
+					<td>
+						<p>filter specials by [isExclusive, isVisible, type]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isExclusive=false&isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isExclusive=false&isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isExclusive=false&isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isExclusive=false&isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>ERROR</td>
+					<td>
+						<ul>						
+								<li>isExclusive=false</li>
+								<li>isVisible=true</li>
+								<li>RestaurantId=MjQ=[2128 N. Glenoaks Blvd #103]</li>
+								<li>type=BUY_X_GET_Y_FREE</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Invalid request, returned with http status 404
+					</td>
+				</tr>
+				<tr class="Error">
+					<td>
+						<p>filter specials by [isExclusive, isVisible, type]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isExclusive=true&isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isExclusive=true&isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isExclusive=true&isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isExclusive=true&isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>ERROR</td>
+					<td>
+						<ul>						
+								<li>isExclusive=true</li>
+								<li>isVisible=false</li>
+								<li>RestaurantId=MjQ=[2128 N. Glenoaks Blvd #103]</li>
+								<li>type=BUY_X_GET_Y_FREE</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Invalid request, returned with http status 404
+					</td>
+				</tr>
+				<tr class="Error">
+					<td>
+						<p>filter specials by [isExclusive, isVisible, type]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isExclusive=false&isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isExclusive=false&isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isExclusive=false&isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isExclusive=false&isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>ERROR</td>
+					<td>
+						<ul>						
+								<li>isExclusive=false</li>
+								<li>isVisible=true</li>
+								<li>RestaurantId=MjQ=[2128 N. Glenoaks Blvd #103]</li>
+								<li>type=BUY_X_GET_Y_FREE</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Invalid request, returned with http status 404
+					</td>
+				</tr>
+				<tr class="Error">
+					<td>
+						<p>filter specials by [isExclusive, isVisible, type]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isExclusive=true&isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isExclusive=true&isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isExclusive=true&isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.json?isExclusive=true&isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>ERROR</td>
+					<td>
+						<ul>						
+								<li>isExclusive=true</li>
+								<li>isVisible=false</li>
+								<li>RestaurantId=MjQ=[2128 N. Glenoaks Blvd #103]</li>
+								<li>type=BUY_X_GET_Y_FREE</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Invalid request, returned with http status 404
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>filter specials by [type]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>RestaurantId=MjQ=[2128 N. Glenoaks Blvd #103]</li>
+								<li>type=BUY_X_GET_Y_FREE</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td># of specials</td><td>Buy Large Specialty, Get M Cheese FREE | Buy a Medium Pizza, Get a Medium Pizza Free | Buy Any XL Pizza, Get FREE Ice Cream | Buy Any Large Pizza, Get FREE Ice Cream | Free Ice Cream with L or XL Pizza | FREE Garlic Breadsticks and Soda | Free Breadsticks and 2 Liter w/purchase | Buy Lg Specialty, Get M One Top FREE</td><td>Buy a Medium Pizza, Get a Medium Pizza Free | Buy Any XL Pizza, Get FREE Ice Cream | Buy Any Large Pizza, Get FREE Ice Cream | Free Ice Cream with L or XL Pizza | FREE Garlic Breadsticks and Soda | Free Breadsticks and 2 Liter w/purchase | Buy Lg Specialty, Get M One Top FREE</td></tr></table>
+					</td>
+				</tr>
+				<tr class="Error">
+					<td>
+						<p>filter specials by [isVisible, type]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>ERROR</td>
+					<td>
+						<ul>						
+								<li>isVisible=true</li>
+								<li>RestaurantId=MjQ=[2128 N. Glenoaks Blvd #103]</li>
+								<li>type=BUY_X_GET_Y_FREE</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Invalid request, returned with http status 404
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>filter specials by [isVisible, type]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>isVisible=false</li>
+								<li>RestaurantId=MjQ=[2128 N. Glenoaks Blvd #103]</li>
+								<li>type=BUY_X_GET_Y_FREE</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr class="Error">
+					<td>
+						<p>filter specials by [isExclusive, isVisible, type]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isExclusive=false&isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isExclusive=false&isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isExclusive=false&isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isExclusive=false&isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>ERROR</td>
+					<td>
+						<ul>						
+								<li>isExclusive=false</li>
+								<li>isVisible=true</li>
+								<li>RestaurantId=MjQ=[2128 N. Glenoaks Blvd #103]</li>
+								<li>type=BUY_X_GET_Y_FREE</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Invalid request, returned with http status 404
+					</td>
+				</tr>
+				<tr class="Error">
+					<td>
+						<p>filter specials by [isExclusive, isVisible, type]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isExclusive=true&isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isExclusive=true&isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isExclusive=true&isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isExclusive=true&isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>ERROR</td>
+					<td>
+						<ul>						
+								<li>isExclusive=true</li>
+								<li>isVisible=false</li>
+								<li>RestaurantId=MjQ=[2128 N. Glenoaks Blvd #103]</li>
+								<li>type=BUY_X_GET_Y_FREE</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Invalid request, returned with http status 404
+					</td>
+				</tr>
+				<tr class="Error">
+					<td>
+						<p>filter specials by [isExclusive, isVisible, type]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isExclusive=false&isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isExclusive=false&isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isExclusive=false&isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isExclusive=false&isVisible=true&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>ERROR</td>
+					<td>
+						<ul>						
+								<li>isExclusive=false</li>
+								<li>isVisible=true</li>
+								<li>RestaurantId=MjQ=[2128 N. Glenoaks Blvd #103]</li>
+								<li>type=BUY_X_GET_Y_FREE</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Invalid request, returned with http status 404
+					</td>
+				</tr>
+				<tr class="Error">
+					<td>
+						<p>filter specials by [isExclusive, isVisible, type]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isExclusive=true&isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isExclusive=true&isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isExclusive=true&isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants/MjQ=/specials.xml?isExclusive=true&isVisible=false&type=BUY_X_GET_Y_FREE&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>ERROR</td>
+					<td>
+						<ul>						
+								<li>isExclusive=true</li>
+								<li>isVisible=false</li>
+								<li>RestaurantId=MjQ=[2128 N. Glenoaks Blvd #103]</li>
+								<li>type=BUY_X_GET_Y_FREE</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Invalid request, returned with http status 404
+					</td>
+				</tr>
+		</table>
+	</body>
+</html>

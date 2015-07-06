@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"	
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oxm="http://www.springframework.org/schema/oxm" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/oxm http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd
+         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations" value="classpath:ethor_API_test.properties" />
+    </bean>
+    
+     <bean id="testSession" class="java.util.HashMap" />
+
+    <bean id="restClient" class="com.ethor.testbed.RestClient">
+        <constructor-arg ref="restTemplate"/>
+        <constructor-arg value="${ethor.api.base.url}"/>
+        <constructor-arg ref="credentials"/>        
+    </bean>
+ 
+   <!--  <bean id="httpClientParams" class="org.apache.commons.httpclient.params.HttpClientParams">
+        <property name="authenticationPreemptive" value="true"/>
+        <property name="connectionManagerClass"
+                  value="org.apache.commons.httpclient.MultiThreadedHttpConnectionManager"/>
+    </bean>
+    <bean id="httpClient" class="org.apache.commons.httpclient.HttpClient">
+        <constructor-arg ref="httpClientParams"/>
+    </bean> -->
+    <bean id="credentials" class="com.ethor.testbed.Credentials">
+        <constructor-arg value="${ethor.api.user}"/>
+        <constructor-arg value="${ethor.api.token}"/>
+         <constructor-arg value="${ethor.api.key}"/>
+    </bean>
+    
+    <bean id="credentialProvider" class="com.ethor.testbed.SimpleCrendentialsProvider">
+        <constructor-arg ref="credentials"/>
+    </bean>
+    
+    <bean id="httpClientFactory" class="com.ethor.testbed.BasicSecureSimpleClientHttpRequestFactory">
+         <property name="credentialsProvider" ref="credentialProvider"/>
+    </bean>
+    
+    <!-- Retrieve all test cases-->
+    <bean id="retrieveChains" class="com.ethor.testbed.api.test.chain.RetrieveChainsTest" />
+    <bean id="retrieveRestaurants" class="com.ethor.testbed.api.test.restaurant.RetrieveRestaurantsTest" />
+    <bean id="retrieveCategories" class="com.ethor.testbed.api.test.category.RetrieveCategoriesTest" />
+    <bean id="retrieveMenuitems" class="com.ethor.testbed.api.test.menuitem.RetrieveMenuitemsTest" />
+    <bean id="retrieveSpecials" class="com.ethor.testbed.api.test.special.RetrieveSpecialsTest" />
+    <bean id="retrieveCustomer" class="com.ethor.testbed.api.test.customer.RetrieveCustomerTest">
+    	<property name="testDataManager" ref="testDataManager"/>
+    </bean>
+    
+    <!-- Retrieve count test cases -->
+    <bean id="retrieveChainsCount" class="com.ethor.testbed.api.test.chain.RetrieveChainsCountTest" />
+    <bean id="retrieveRestaurantsCount" class="com.ethor.testbed.api.test.restaurant.RetrieveRestaurantsCountTest" />
+    <bean id="retrieveCategoriesCount" class="com.ethor.testbed.api.test.category.RetrieveCategoriesCountTest" />    
+    <bean id="retrieveSpecialsCount" class="com.ethor.testbed.api.test.special.RetrieveSpecialsCountTest" />
+    <bean id="retrieveMenuitemsCount" class="com.ethor.testbed.api.test.menuitem.RetrieveMenuitemsCountTest" />
+    
+    <!--  Retrieve by id test cases -->
+    <bean id="retrieveRestaurantById" class="com.ethor.testbed.api.test.restaurant.RetrieveRestaurantByIdTest" />
+    <bean id="retrieveChainById" class="com.ethor.testbed.api.test.chain.RetrieveChainByIdTest" />
+    <bean id="retrieveCategoryById" class="com.ethor.testbed.api.test.category.RetrieveCategoryByIdTest" />
+    <bean id="retrieveMenuItemById" class="com.ethor.testbed.api.test.menuitem.RetrieveMenuitemByIdTest">
+    	<property name="testDataManager" ref="testDataManager"/>
+    </bean>
+    
+    
+    <bean id="calculateOrder" class="com.ethor.testbed.api.test.order.CalculateOrderTest">
+    	<property name="testDataManager" ref="testDataManager"/>
+    </bean>
+    
+    <bean id="restaurantFilter" class="com.ethor.testbed.api.test.restaurant.RestaurantFilterTest">
+    	<property name="testDataManager" ref="testDataManager"/>
+    </bean>
+    <bean id="specialsFilter" class="com.ethor.testbed.api.test.special.SpecialsFilterTest">
+    	<property name="testDataManager" ref="testDataManager"/>
+    </bean>
+    <bean id="menuItemFilter" class="com.ethor.testbed.api.test.menuitem.MenuItemFilterTest">
+    	<property name="testDataManager" ref="testDataManager"/>
+    </bean>
+    
+    
+    
+    
+    
+    
+    
+    <!-- Test data manager -->    
+    <bean id="testDataManager" class="com.ethor.testbed.api.test.data.ExcelTestDataManagerImpl">
+    	<property name="restaurantTestDataReader" ref="restaurantTestDataReader"/>
+    	<property name="chainTestDataReader" ref="chainTestDataReader"/>
+    	<property name="customerTestDataReader" ref="customerTestDataReader"/>
+    	<property name="customerChainMapDataReader" ref="customerChainMapDataReader"/>
+    	<property name="restaurantFilterTestDataReader" ref="restaurantFilterTestDataReader"/>
+    	<property name="specialsFilterTestDataReader" ref="specialsFilterTestDataReader"/>
+    	<property name="categoryTestDataReader" ref="categoryTestDataReader"/>
+    	<property name="menuItemFilterTestDataReader" ref="menuItemFilterTestDataReader"/>
+    	<property name="orderTestDataReader" ref="orderTestDataReader"/>
+    	<property name="menuItemTestDataReader" ref="menuItemTestDataReader"/>
+    	
+    	
+    	
+    </bean>
+    
+    <!-- Excel data readers -->
+    <bean id="restaurantTestDataReader" class="com.ethor.testbed.api.test.data.RestaurantTestDataReader" />
+    <bean id="chainTestDataReader" class="com.ethor.testbed.api.test.data.ChainTestDataReader" />
+    <bean id="customerTestDataReader" class="com.ethor.testbed.api.test.data.CustomerTestDataReader" />
+    <bean id="menuItemTestDataReader" class="com.ethor.testbed.api.test.data.MenuItemTestDataReader" />
+    <bean id="customerChainMapDataReader" class="com.ethor.testbed.api.test.data.CustomerChainMapDataReader" />
+    <bean id="restaurantFilterTestDataReader" class="com.ethor.testbed.api.test.data.RestaurantFilterTestDataReader" />
+    <bean id="specialsFilterTestDataReader" class="com.ethor.testbed.api.test.data.SpecialsFilterTestDataReader" />
+    <bean id="categoryTestDataReader" class="com.ethor.testbed.api.test.data.CategoryTestDataReader" />
+    <bean id="menuItemFilterTestDataReader" class="com.ethor.testbed.api.test.data.MenuItemFilterTestDataReader" />
+    <bean id="orderTestDataReader" class="com.ethor.testbed.api.test.data.OrderTestDataReader" />
+    
+
+	<bean id="restTemplate" class="org.springframework.web.client.RestTemplate">
+		<!-- <constructor-arg ref="httpClientFactory"/> -->
+		<property name="messageConverters">
+			<list>
+				<bean
+					class="org.springframework.http.converter.xml.MarshallingHttpMessageConverter">
+					<property name="marshaller" ref="jaxbMarshaller" />
+					<property name="unmarshaller" ref="jaxbMarshaller" />
+					<property name="supportedMediaTypes">
+						<list>
+
+							<bean class="org.springframework.http.MediaType">
+								<constructor-arg index="0" value="application" />
+								<constructor-arg index="1" value="xml" />
+								<constructor-arg index="2" value="UTF-8" />
+								<!-- <constructor-arg index="2" value="UTF-8"/> -->
+							</bean>
+						</list>
+					</property>
+				</bean>
+
+				<!-- <bean class="org.springframework.http.converter.FormHttpMessageConverter"/> -->
+				<bean id="jacksonMessageConverter"
+					class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" />
+			</list>
+		</property>
+		<!-- <property name="errorHandler" ref="apiErrorHandler" /> -->
+	</bean>
+	
+	 <bean id="apiErrorHandler" class="com.ethor.testbed.APIResponseErrorHandler"  scope="prototype"/>
+
+    <bean id="jaxbMarshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
+        <property name="classesToBeBound">
+            <list>
+            	<value>com.ethor.testbed.api.domain.Entity</value>
+            	<value>com.ethor.testbed.api.domain.Count</value>
+            	<value>com.ethor.testbed.api.domain.Error</value>
+            	<value>com.ethor.testbed.api.domain.Errors</value>
+            	
+            	<value>com.ethor.testbed.api.domain.chain.Chains</value>
+            	<value>com.ethor.testbed.api.domain.chain.Chain</value>
+            	
+            	<value>com.ethor.testbed.api.domain.restaurant.Restaurant</value>
+            	<value>com.ethor.testbed.api.domain.restaurant.Restaurants</value>
+            	<value>com.ethor.testbed.api.domain.restaurant.RestaurantStatus</value>
+            	<value>com.ethor.testbed.api.domain.restaurant.AcceptedPayments</value>
+            	
+            	<value>com.ethor.testbed.api.domain.category.Category</value>
+            	<value>com.ethor.testbed.api.domain.category.Categories</value>    
+            	        	
+            	<value>com.ethor.testbed.api.domain.menuitem.MenuItem</value>
+            	<value>com.ethor.testbed.api.domain.menuitem.MenuItems</value>
+            	<value>com.ethor.testbed.api.domain.menuitem.Contents</value>
+            	<value>com.ethor.testbed.api.domain.menuitem.ContentGroups</value>
+            	<value>com.ethor.testbed.api.domain.menuitem.AmountSelection</value>
+            	<value>com.ethor.testbed.api.domain.menuitem.PortionSelection</value>
+            	<value>com.ethor.testbed.api.domain.menuitem.Size</value>
+            	
+            	<value>com.ethor.testbed.api.domain.special.Special</value>
+            	<value>com.ethor.testbed.api.domain.special.Specials</value>
+            	<value>com.ethor.testbed.api.domain.special.ItemSelections</value>
+            	<value>com.ethor.testbed.api.domain.special.SizeSelection</value>
+            	<value>com.ethor.testbed.api.domain.special.SizeSelections</value>
+            	<value>com.ethor.testbed.api.domain.special.SpecialItems</value>
+            	<value>com.ethor.testbed.api.domain.special.SpecialType</value>
+            	
+            	<value>com.ethor.testbed.api.domain.customer.Customers</value>
+            	<value>com.ethor.testbed.api.domain.customer.Customer</value>            	
+            	<value>com.ethor.testbed.api.domain.customer.Address</value>
+            	<value>com.ethor.testbed.api.domain.customer.PhoneNumber</value>
+            	<value>com.ethor.testbed.api.domain.customer.PhoneNumbers</value>
+            	
+            </list>
+        </property>
+    </bean>
+    
+    <!--  <bean id="testDataManager" class="com.ethor.testbed.api.test.data.ExcelTestDataManagerImpl">
+         <property name="credentialsProvider" ref="credentialProvider"/>
+    </bean> -->
+    
+</beans>

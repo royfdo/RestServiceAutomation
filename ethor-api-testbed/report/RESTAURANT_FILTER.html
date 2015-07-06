@@ -1,0 +1,449 @@
+<html>
+	<head>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css" title="Style">
+		<title>ethor RestAPI test report</title>
+		<h1>ethor RestAPI test report</h1>
+	</head>
+	<body>
+		<div class="home">
+			<a href='index.html'>Home</a>
+		</div>
+		<h2>RESTAURANT_FILTER module</h2>
+		<table class="details">
+			<tr>
+				<th width="35%"> Test scenario </th>
+				<!-- th width="12%"> URL </th -->
+				<th width="4%"> Format </th>
+				<th width="4%"> Status </th>
+				<th width="17%"> Request Param </th>
+				<th width="40%"> Description </th>
+			</tr>
+				<tr>
+					<td>
+						<p>filter restaurants by [city]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+								<li>city=Burbank</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>filter restaurants by [city]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?city=Redondo Beach&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?city=Redondo Beach&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?city=Redondo Beach&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?city=Redondo Beach&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+								<li>city=Redondo Beach</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>filter restaurants by [postalZip]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?postalZip=97302&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?postalZip=97302&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?postalZip=97302&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?postalZip=97302&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+								<li>postalZip=97302</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>filter restaurants by [status ]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?status=OPEN&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?status=OPEN&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?status=OPEN&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?status=OPEN&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>status =OPEN</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td># of resturants</td><td>1105 Bellevue Way NE | 23330 Maple Valley Black Diamond Rd | 12480 SW Walker Road | 8431 122nd Ave NE | 34024 Hoyt Rd SW | 18404 120th Ave NE | 11523 Avondale Road NE | 10924 Mukilteo Speedway | 10219 SE Sunnyside Rd | 3922 148th St. SE | 9758 NE 119th Way | 13317 NE 12th Ave | 2400 NE 65th Street | 4555 Liberty Road S | 6030 Main St. SW, Suite E | 3982 Red Cedar Dr. Suite A | 5730 Ruddell Rd #B | 3080 148th Ave SE Suite #110 | 131 Cochran St., Suite D | 8410 SW Nimbus Ave, #400 | 2128 N. Glenoaks Blvd #103 | 1876 S. Pacific Coast Highway | 9796 Edmonds Way | 5031 168th Street SW</td><td>2128 N. Glenoaks Blvd #103 | 1876 S. Pacific Coast Highway | 131 Cochran St., Suite D | 3982 Red Cedar Dr. Suite A | 8410 SW Nimbus Ave, #500 | 4555 Liberty Road S | 1105 Bellevue Way NE | 8431 122nd Ave NE | 23330 Maple Valley Black Diamond Rd | 12480 SW Walker Road</td></tr></table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>filter restaurants by [status ]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?status=CLOSED&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?status=CLOSED&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?status=CLOSED&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?status=CLOSED&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>status =CLOSED</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>filter restaurants by [status , city]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?status=OPEN&city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?status=OPEN&city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?status=OPEN&city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?status=OPEN&city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>status =OPEN</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+								<li>city=Burbank</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr class="Error">
+					<td>
+						<p>filter restaurants by [status , city]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?status=CLOSED&city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?status=CLOSED&city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?status=CLOSED&city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.json?status=CLOSED&city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>ERROR</td>
+					<td>
+						<ul>						
+								<li>status =CLOSED</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+								<li>city=Burbank</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Invalid request, returned with http status 404
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>filter restaurants by [city]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/jetcity/restaurants.json?city=Newcastle&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/jetcity/restaurants.json?city=Newcastle&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/jetcity/restaurants.json?city=Newcastle&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/jetcity/restaurants.json?city=Newcastle&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>ChainId=jetcity[Jet City Pizza]</li>
+								<li>city=Newcastle</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>filter restaurants by [city]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/cousinvinnys/restaurants.json?city=Dayton&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/cousinvinnys/restaurants.json?city=Dayton&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/cousinvinnys/restaurants.json?city=Dayton&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/cousinvinnys/restaurants.json?city=Dayton&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>ChainId=cousinvinnys[Cousin Vinny's Pizza]</li>
+								<li>city=Dayton</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td># of resturants</td><td>2032 Wayne Ave. | 2262 Patterson Rd | 1080 Kauffman Ave. | 1916 E. Whipp Rd. | 7742 Brandt Pike | 6676 Towne Center Drive | 3275 W. Siebenthaler Ave.</td><td>2032 Wayne Ave. | 2262 Patterson Rd | 1916 E. Whipp Rd. | 6676 Towne Center Drive | 3275 W. Siebenthaler Ave.</td></tr></table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>filter restaurants by [postalZip, city]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/cousinvinnys/restaurants.json?postalZip=45410&city=Dayton&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/cousinvinnys/restaurants.json?postalZip=45410&city=Dayton&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/cousinvinnys/restaurants.json?postalZip=45410&city=Dayton&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/cousinvinnys/restaurants.json?postalZip=45410&city=Dayton&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>JSON</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>ChainId=cousinvinnys[Cousin Vinny's Pizza]</li>
+								<li>postalZip=45410</li>
+								<li>city=Dayton</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>filter restaurants by [city]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+								<li>city=Burbank</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>filter restaurants by [city]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?city=Redondo Beach&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?city=Redondo Beach&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?city=Redondo Beach&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?city=Redondo Beach&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+								<li>city=Redondo Beach</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>filter restaurants by [postalZip]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?postalZip=97302&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?postalZip=97302&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?postalZip=97302&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?postalZip=97302&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+								<li>postalZip=97302</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>filter restaurants by [status ]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?status=OPEN&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?status=OPEN&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?status=OPEN&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?status=OPEN&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>status =OPEN</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td># of resturants</td><td>1105 Bellevue Way NE | 23330 Maple Valley Black Diamond Rd | 12480 SW Walker Road | 8431 122nd Ave NE | 34024 Hoyt Rd SW | 18404 120th Ave NE | 11523 Avondale Road NE | 10924 Mukilteo Speedway | 10219 SE Sunnyside Rd | 3922 148th St. SE | 9758 NE 119th Way | 13317 NE 12th Ave | 2400 NE 65th Street | 4555 Liberty Road S | 6030 Main St. SW, Suite E | 3982 Red Cedar Dr. Suite A | 5730 Ruddell Rd #B | 3080 148th Ave SE Suite #110 | 131 Cochran St., Suite D | 8410 SW Nimbus Ave, #400 | 2128 N. Glenoaks Blvd #103 | 1876 S. Pacific Coast Highway | 9796 Edmonds Way | 5031 168th Street SW</td><td>2128 N. Glenoaks Blvd #103 | 1876 S. Pacific Coast Highway | 131 Cochran St., Suite D | 3982 Red Cedar Dr. Suite A | 8410 SW Nimbus Ave, #500 | 4555 Liberty Road S | 1105 Bellevue Way NE | 8431 122nd Ave NE | 23330 Maple Valley Black Diamond Rd | 12480 SW Walker Road</td></tr></table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>filter restaurants by [status ]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?status=CLOSED&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?status=CLOSED&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?status=CLOSED&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?status=CLOSED&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>status =CLOSED</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>filter restaurants by [status , city]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?status=OPEN&city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?status=OPEN&city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?status=OPEN&city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?status=OPEN&city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>status =OPEN</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+								<li>city=Burbank</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr class="Error">
+					<td>
+						<p>filter restaurants by [status , city]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?status=CLOSED&city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?status=CLOSED&city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?status=CLOSED&city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/garlicjim/restaurants.xml?status=CLOSED&city=Burbank&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>ERROR</td>
+					<td>
+						<ul>						
+								<li>status =CLOSED</li>
+								<li>ChainId=garlicjim[Garlic Jim's]</li>
+								<li>city=Burbank</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Invalid request, returned with http status 404
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>filter restaurants by [city]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/jetcity/restaurants.xml?city=Newcastle&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/jetcity/restaurants.xml?city=Newcastle&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/jetcity/restaurants.xml?city=Newcastle&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/jetcity/restaurants.xml?city=Newcastle&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>ChainId=jetcity[Jet City Pizza]</li>
+								<li>city=Newcastle</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+				<tr class="Failure">
+					<td>
+						<p>filter restaurants by [city]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/cousinvinnys/restaurants.xml?city=Dayton&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/cousinvinnys/restaurants.xml?city=Dayton&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/cousinvinnys/restaurants.xml?city=Dayton&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/cousinvinnys/restaurants.xml?city=Dayton&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>FAIL</td>
+					<td>
+						<ul>						
+								<li>ChainId=cousinvinnys[Cousin Vinny's Pizza]</li>
+								<li>city=Dayton</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							<table width='100%' class='expected'><th>Attribute</th><th>Expected</th><th>Actual</th><tr><td># of resturants</td><td>2032 Wayne Ave. | 2262 Patterson Rd | 1080 Kauffman Ave. | 1916 E. Whipp Rd. | 7742 Brandt Pike | 6676 Towne Center Drive | 3275 W. Siebenthaler Ave.</td><td>2032 Wayne Ave. | 2262 Patterson Rd | 1916 E. Whipp Rd. | 6676 Towne Center Drive | 3275 W. Siebenthaler Ave.</td></tr></table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>filter restaurants by [postalZip, city]</p>
+						<p><B><I>URL : </I><B><a href='http://localhost:8080/v1.0/chains/cousinvinnys/restaurants.xml?postalZip=45410&city=Dayton&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/cousinvinnys/restaurants.xml?postalZip=45410&city=Dayton&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></p>
+					</td>					
+					<!-- td><a href='http://localhost:8080/v1.0/chains/cousinvinnys/restaurants.xml?postalZip=45410&city=Dayton&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k='> http://localhost:8080/v1.0/chains/cousinvinnys/restaurants.xml?postalZip=45410&city=Dayton&accessKey=11sW3qTIZFhUnARp4BPT5aIXs8k=</a></td -->
+					<td>XML</td>
+					<td>PASS</td>
+					<td>
+						<ul>						
+								<li>ChainId=cousinvinnys[Cousin Vinny's Pizza]</li>
+								<li>postalZip=45410</li>
+								<li>city=Dayton</li>
+						</ul>
+					
+					</td>
+					
+					
+					<td>
+							Successful
+					</td>
+				</tr>
+		</table>
+	</body>
+</html>
