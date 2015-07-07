@@ -11,3 +11,4 @@ Technologies used.
 * JUnit 4
 * Apache POI
 * FreeMarker
+* Maven 3
